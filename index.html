@@ -1,0 +1,175 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Frontiers</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#06100c;color:#fff}
+.demo{text-align:center;background:#d8aa35;color:#111;padding:8px;font-size:12px;font-weight:bold}
+header{padding:20px 7%;display:flex;justify-content:space-between;border-bottom:1px solid #26382e}
+.logo{color:#e1b83f;font-size:23px;font-weight:bold}
+nav a{color:#ddd;text-decoration:none;margin-left:22px}
+.hero{text-align:center;padding:70px 20px;background:radial-gradient(circle,#19432d,#06100c 65%)}
+.badges{margin-bottom:25px}
+.badge{display:inline-block;border:1px solid #b99635;color:#e4c45b;border-radius:20px;padding:7px 14px;margin:5px;font-size:13px}
+h1{font-size:clamp(40px,8vw,72px);line-height:1.05;margin-bottom:20px}
+h1 span{color:#e2b83f}
+.hero p{max-width:720px;margin:auto;color:#b8c4bd;font-size:17px}
+.buttons{margin-top:30px}
+button{padding:14px 25px;border-radius:8px;border:0;font-weight:bold;cursor:pointer;margin:5px}
+.primary{background:#d9ad38;color:#111}
+.secondary{background:transparent;color:white;border:1px solid #59675f}
+.stats{max-width:1100px;margin:30px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:0 20px}
+.stat{background:#0d1d15;border:1px solid #26382f;border-radius:12px;padding:22px;text-align:center;color:#aebbb3}
+.stat strong{display:block;color:#e2b83f;font-size:25px}
+.section{text-align:center;padding:70px 7%}
+.section h2{font-size:36px;margin-bottom:10px}
+.section>p{color:#aeb9b2;margin-bottom:35px}
+.plans{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:linear-gradient(145deg,#10241a,#09130f);border:1px solid #33463b;border-radius:16px;padding:28px;text-align:left;position:relative}
+.card.popular{border:2px solid #d4aa35}
+.tag{position:absolute;right:18px;top:-13px;background:#d5aa35;color:#111;padding:5px 12px;border-radius:15px;font-size:11px;font-weight:bold}
+.card h3{color:#e1b83e;font-size:23px}
+.amount{font-size:32px;font-weight:bold;margin:12px 0}
+.card p{color:#aeb9b1;font-size:14px;min-height:48px;margin-bottom:20px}
+.card button{width:100%;margin:0}
+.notice{max-width:850px;margin:30px auto;padding:15px;border:1px solid #735f25;background:#17170d;color:#d6ca96;border-radius:10px;font-size:13px}
+footer{text-align:center;padding:30px;color:#849088;border-top:1px solid #26382f}
+@media(max-width:800px){
+.stats,.plans{grid-template-columns:1fr}
+nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<div class="demo">COLLEGE PROJECT • DEMONSTRATION WEBSITE • NO REAL MONEY OR PAYMENTS</div>
+
+<header>
+<div class="logo">Financial Frontiers</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#plans">Plans</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="badges">
+<span class="badge">✓ Secure Demo</span>
+<span class="badge">✓ Transparent</span>
+<span class="badge">✓ Educational</span>
+</div>
+
+<h1>Grow Your Wealth<br><span>With Confidence</span></h1>
+
+<p>
+A modern financial-platform concept created for a college project.
+Explore sample plans and an interactive financial dashboard concept.
+</p>
+
+<div class="buttons">
+<button class="primary" onclick="welcome()">Explore Demo</button>
+<button class="secondary" onclick="document.getElementById('plans').scrollIntoView()">View Plans</button>
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat"><strong>12,400+</strong>Demo Users</div>
+<div class="stat"><strong>₹4.2Cr+</strong>Sample Volume</div>
+<div class="stat"><strong>30 min</strong>Demo Processing</div>
+<div class="stat"><strong>100%</strong>Educational Demo</div>
+
+</section>
+
+<section class="section" id="plans">
+
+<h2>Choose Your Investment Plan</h2>
+<p>Sample plans created for demonstration purposes.</p>
+
+<div class="plans">
+
+<div class="card">
+<h3>Starter</h3>
+<div class="amount">₹850</div>
+<p>Entry-level sample plan for exploring the platform.</p>
+<button class="primary" onclick="demo()">Invest Now</button>
+</div>
+
+<div class="card">
+<h3>Standard</h3>
+<div class="amount">₹1,500</div>
+<p>Sample standard plan for the project interface.</p>
+<button class="primary" onclick="demo()">Invest Now</button>
+</div>
+
+<div class="card popular">
+<div class="tag">POPULAR</div>
+<h3>Premium</h3>
+<div class="amount">₹2,000</div>
+<p>Highlighted premium plan demonstration.</p>
+<button class="primary" onclick="demo()">Invest Now</button>
+</div>
+
+<div class="card">
+<h3>Elite</h3>
+<div class="amount">₹3,000</div>
+<p>Sample elite-level platform experience.</p>
+<button class="primary" onclick="demo()">Invest Now</button>
+</div>
+
+<div class="card">
+<h3>Ultimate</h3>
+<div class="amount">₹5,000</div>
+<p>High-tier sample plan for presentation.</p>
+<button class="primary" onclick="demo()">Invest Now</button>
+</div>
+
+<div class="card">
+<h3>Custom</h3>
+<div class="amount">₹10,000</div>
+<p>Illustrative custom-plan interface.</p>
+<button class="primary" onclick="demo()">Invest Now</button>
+</div>
+
+</div>
+
+<div class="notice">
+This is a college-project demonstration. Amounts and transactions shown are illustrative only.
+No real investment or payment is processed.
+</div>
+
+</section>
+
+<section class="section" id="about">
+<h2>About The Project</h2>
+<p>
+Financial Frontiers is a conceptual financial-platform interface
+created to demonstrate modern web design, responsive layouts and
+interactive user experience.
+</p>
+</section>
+
+<footer>
+© 2026 Financial Frontiers • College Project Demo
+</footer>
+
+<script>
+function welcome(){
+alert("Welcome to the Financial Frontiers demonstration!");
+}
+
+function demo(){
+alert("Demo mode: this button does not process real money.");
+}
+</script>
+
+</body>
+</html>
